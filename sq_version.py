@@ -50,7 +50,7 @@ def main():
     food = Food()
     food_exists = True
     running = True
-    instr = "DEAD! Press RETURN/ENTER to play again"
+    instr = "Press RETURN/ENTER to play again"
     instruction = font.render(instr, True, (255, 255, 255))
     score_value = 0
     game_over = pygame.image.load("game_over.png")
@@ -131,7 +131,7 @@ def main():
                 if snake.x[0] == snake.x[i] and snake.y[0] == snake.y[i]:
                     del snake
                     del food
-                    #screen.blit(instruction, (10, 80))
+                    screen.blit(instruction, (10, 80))
                     screen.blit(game_over, (60, 250))
                     play_game = False
                     break
