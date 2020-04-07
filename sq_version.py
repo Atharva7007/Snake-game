@@ -131,7 +131,7 @@ def main():
                 if snake.x[0] == snake.x[i] and snake.y[0] == snake.y[i]:
                     del snake
                     del food
-                    screen.blit(instruction, (10, 80))
+                    screen.blit(instruction, (60, 80))
                     screen.blit(game_over, (60, 250))
                     play_game = False
                     break
